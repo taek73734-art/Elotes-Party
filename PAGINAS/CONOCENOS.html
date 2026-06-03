@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOSOTROS</title>
+
+<style>
+	<style type="text/css">
+
+#base{
+    width: 1500px;
+    min-height: 800px;
+    margin: auto;
+    background: linear-gradient(90deg, #ff6f00, #ffffff, #ff8f00);
+    border: 2px solid black;
+    padding: 20px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#ffd6ec;
+    overflow-x:hidden;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+nav{
+    background:#6ec6ff;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#6a1b9a;
+}
+
+#base{
+    flex:1;
+    width:90%;
+    max-width:1500px;
+    min-height:1200px;
+    background:linear-gradient(90deg,#fff9c4,#ffd6e8,#ffc2d1);
+    margin:20px auto;
+    padding:20px;
+}
+
+#encabezado,
+#encabezado1,
+#encabezado2{
+    padding:15px;
+    text-align:center;
+}
+
+#encabezado h1,
+#encabezado1 h1,
+#encabezado2 h1{
+    color:#ff1493;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+#encabezado p,
+#encabezado1 p{
+    font-size:20px;
+    color:#555;
+    line-height:1.8;
+    text-align:justify;
+    padding:0 30px;
+}
+
+.imagen{
+    display:block;
+    margin:20px auto;
+    width:90%;
+    max-width:910px;
+    height:auto;
+}
+
+.video{
+    text-align:center;
+    margin:30px 0;
+}
+
+.contenedor{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:25px;
+    padding:40px 20px;
+}
+
+.tarjeta:nth-child(1){
+    grid-column:1 / 3;
+}
+
+.tarjeta:nth-child(2){
+    grid-column:3 / 5;
+}
+
+.tarjeta:nth-child(3){
+    grid-column:5 / 7;
+}
+
+
+.tarjeta:nth-child(4){
+    grid-column:2 / 4;
+}
+
+.tarjeta:nth-child(5){
+    grid-column:4 / 6;
+}
+
+.tarjeta{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.tarjeta:hover{
+    transform:scale(1.05);
+}
+
+.tarjeta img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #ff69b4;
+}
+
+.nombre{
+    font-size:24px;
+    color:#ff1493;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.cargo{
+    font-size:17px;
+    color:#d63384;
+    margin-top:5px;
+    font-weight:bold;
+}
+
+.descripcion{
+    font-size:14px;
+    color:#555;
+    margin-top:10px;
+    line-height:1.5;
+}
+
+.banner{
+    width:90%;
+    background:white;
+    margin:30px auto;
+    border-radius:20px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    padding:20px;
+    gap:25px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.banner img{
+    width:300px;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.texto-banner{
+    flex:1;
+}
+
+.texto-banner h2{
+    color:#ff1493;
+    font-size:24px;
+    text-align:justify;
+    line-height:1.6;
+}
+
+.pie{
+    width:100%;
+    background:linear-gradient(90deg,#ff69b4,#ffffff,#ff1493);
+    color:#6a1b9a;
+    text-align:center;
+    padding:20px;
+    font-size:20px;
+    margin-top:40px;
+    box-shadow:0 -5px 15px rgba(0,0,0,0.2);
+}
+
+</style>
+</head>
+<body>
+
+<div id="base">
+
+<nav>
+    <a href="../indexx.html">INICIO</a>
+    <a href="CONOCENOS.html">CONÓCENOS</a>
+    <a href="MENU.html">MENÚ</a>
+    <a href="PROMOCIONES.html">PROMOCIONES</a>
+    <a href="EVENTOS.html">EVENTOS</a>
+    <a href="CONTACTO.html">CONTACTO</a>
+</nav>
+	   
+    <div id="encabezado2">
+        <h1>🌸 Nuestro Equipo 🌸</h1>
+    </div>
+
+    <img src="../IMAGENES/equipo.jpeg" class="imagen" alt="Equipo">
+
+    <div class="video">
+        <video width="300" height="500" controls>
+            <source src="../VIDEOS/empresa.mp4" type="video/mp4">
+    </video>
+    </div>
+
+    <div id="encabezado">
+        <h1>🌸 MISIÓN 🌸</h1>
+        <p>
+            Transformar el antojo tradicional mexicano en una experiencia moderna y memorable.
+            En Elote Party nos dedicamos a preparar los elotes y esquites más ricos de Santa Isabel
+            utilizando ingredientes frescos, porciones generosas y una buena higiene en cada paso.
+            Buscamos sorprender a cada cliente con combinaciones de toppings únicas que no encuentran
+            en ningún otro lugar, mientras lo atendemos con rapidez, calidad y ese toque fiestero
+            que caracteriza nuestro nombre. Nuestra misión es que cada vaso que entregamos provoque
+            una sonrisa y el deseo de regresar mañana.</p>
+    </div>
+
+    <div id="encabezado1">
+        <h1>🌸 VISIÓN 🌸</h1>
+        <p>
+            Ser la marca número 1 de elotes gourmet en el estado para el año 2029,
+            reconocida por nuestro sabor, servicio rápido y por crear la primera
+            franquicia de esquites con toppings personalizados. Lograremos esto
+            expandiéndonos a 3 sucursales propias, desarrollando un modelo de
+            franquicia accesible y posicionando nuestra marca en plataformas digitales
+            como el referente de antojos con calidad, limpieza y creatividad.
+            Soñamos con exportar el sabor del elote callejero a un concepto de negocio
+            rentable y orgullosamente chihuahuense.</p>
+    </div>
+
+    <div class="contenedor">
+
+        <div class="tarjeta">
+            <img src="../IMAGENES/luna.jpeg" alt="">
+            <div class="nombre">LUNA VILLALOBOS</div>
+            <div class="cargo">LÍDER</div>
+            <div class="descripcion">
+                Gerente General: Encargada de la coordinación y organización de las actividades del equipo.
+        </div>
+        </div>
+
+        <div class="tarjeta">
+            <img src="../IMAGENES/dulce.jpeg" alt="">
+            <div class="nombre">DULCE GARCÍA</div>
+            <div class="cargo">FINANZAS</div>
+            <div class="descripcion">
+                Responsable del control y administración de las finanzas del proyecto.
+        </div>
+        </div>
+
+        <div class="tarjeta">
+            <img src="../IMAGENES/marely.jpeg" alt="">
+            <div class="nombre">MARELY BORUNDA</div>
+            <div class="cargo">MARKETING</div>
+            <div class="descripcion">
+                Encargada de dar a conocer la empresa mediante estrategias de marketing.
+        </div>
+        </div>
+
+        <div class="tarjeta">
+            <img src="../IMAGENES/cecy.jpeg" alt="">
+            <div class="nombre">CECILIA RUIZ</div>
+            <div class="cargo">PRODUCCIÓN</div>
+            <div class="descripcion">
+                Responsable del área de producción y desarrollo del proyecto.
+        </div>
+        </div>
+
+        <div class="tarjeta">
+            <img src="../IMAGENES/isis.jpeg" alt="">
+            <div class="nombre">ISIS PALLARES</div>
+            <div class="cargo">VENTAS-MOSTRADOR</div>
+            <div class="descripcion">
+                Es la encargada de atender a los clientes en el puesto, prepara el elote con toppings y cobra.
+        </div>
+        </div>
+	    </div>
+
+    <div class="banner">
+        <img src="../IMAGENES/ELOTEE.jpeg" alt="">
+        <div class="texto-banner">
+            <h2>
+                🌸 Somos un equipo comprometido y apasionado en Elotes Party, dedicado a ofrecer
+                productos tradicionales con un toque festivo y moderno. Trabajamos con dedicación
+                y colaboración para brindar una experiencia única, cuidando cada detalle y poniendo
+                siempre al cliente en el centro. Nos enorgullece contribuir a que cada celebración
+                sea especial, ofreciendo un servicio cercano y de calidad.
+    </h2>
+    </div>
+    </div>
+    </div>
+
+<footer class="pie">
+    <p>Elotes Party | 04 de junio de 2026</p>
+</footer>
+</body>
+</html>

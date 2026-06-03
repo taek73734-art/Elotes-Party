@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MENÚ</title>
+
+<style>
+#base{
+    width:1500px;
+    min-height:800px;
+    background:linear-gradient(90deg,#ff1493,#ffffff,#ff69b4);
+    margin:auto;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    font-size:50px;
+    color:white;
+    text-shadow:2px 2px 5px black;
+}
+
+nav{
+    background:#6ec6ff;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#6a1b9a;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    justify-items:center;
+}
+
+.contenedor{
+    width:350px;
+    background-color:#D2E29F;
+    padding:13px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+
+.imagen{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+h2{
+    color:#D2691E;
+}
+
+.precio{
+    font-size:28px;
+    color:red;
+    font-weight:bold;
+}
+
+.videos{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+    flex-wrap:nowrap;
+}
+
+.videos video{
+    width:400px;
+    height:400px;
+}
+
+.pie{
+    width:100%;
+    background:linear-gradient(90deg,#ff69b4,#ffffff,#ff1493);
+    color:#6a1b9a;
+    text-align:center;
+    padding:20px;
+    font-size:20px;
+    margin-top:40px;
+    box-shadow:0 -5px 15px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<div id="base">
+
+<nav>
+    <a href="../indexx.html">INICIO</a>
+    <a href="CONOCENOS.html">CONÓCENOS</a>
+    <a href="MENU.html">MENÚ</a>
+    <a href="PROMOCIONES.html">PROMOCIONES</a>
+    <a href="EVENTOS.html">EVENTOS</a>
+    <a href="CONTACTO.html">CONTACTO</a>
+</nav>
+
+<h1>🌽 MENÚ DE ELOTES 🌽</h1>
+
+<div class="menu">
+    <div class="contenedor">
+        <a href="https://www.instagram.com/elote_partyoficial?igsh=MWswYXBrdmp6bmtwbQ%3D%3D&utm_source=qr" target="_blank">
+            <img src="../IMAGENES/WhatsApp Image 2026-05-27 at 12.44.26 PM (1).jpeg" class="imagen" alt="Elote Especial">
+        </a>
+
+        <h2>Elote Especial</h2>
+
+        <p>¡El favorito de la casa! 🌽🔥
+        Disfruta un delicioso elote en palo blanco, empanizado y lleno de sabor,
+        acompañado con Doritos crujientes, queso amarillo y elote desgranado.
+        </p>
+
+        <div class="precio">$95</div>
+    </div>
+	
+    <div class="contenedor">
+        <img src="../IMAGENES/WhatsApp Image 2026-05-27 at 12.44.26 PM.jpeg" class="imagen" alt="Esquite Party">
+
+        <h2>Esquite Party</h2>
+
+        <p>¡La botana perfecta para compartir… o no! 😏🎉
+        Una mezcla irresistible de Doritos, elote blanco, crema o mayonesa,
+        queso amarillo, queso espolvoreado y salsitas deliciosas.
+        </p>
+
+        <div class="precio">$80</div>
+    </div>
+
+    <div class="contenedor">
+        <a href="https://www.instagram.com/elote_partyoficial?igsh=MWswYXBrdmp6bmtwbQ%3D%3D&utm_source=qr" target="_blank">
+            <img src="../IMAGENES/WhatsApp Image 2026-05-27 at 12.44.27 PM (1).jpeg" class="imagen" alt="Elote Entero Espolvoreado">
+        </a>
+
+        <h2>Elote Entero Espolvoreado</h2>
+
+        <p>El clásico que nunca falla 🌽✨
+        Elote en palo blanco preparado con crema o mayonesa, empanizado con
+        espolvoreado, queso amarillo y salsas deliciosas.
+        </p>
+
+        <div class="precio">$45</div>
+    </div>
+
+</div>
+
+<div class="videos">
+
+    <video controls>
+        <source src="../VIDEOS/menu.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+        <source src="../VIDEOS/menu 2.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+        <source src="../VIDEOS/menu  3.mp4" type="video/mp4">
+    </video>
+
+</div>
+
+<footer class="pie">
+    <p>Elotes Party | 04 de junio de 2026</p>
+</footer>
+
+</div>
+
+</body>
+</html>

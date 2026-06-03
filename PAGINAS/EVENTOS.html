@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EVENTOS</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+.heart {
+  width: 60px;
+  height: 60px;
+  background-color: pink;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transform: rotate(-45deg);
+  animation: latido 1s infinite;
+  z-index: 1000;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -30px;
+  left: 0;
+}
+
+.heart::after {
+  left: 30px;
+  top: 0;
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1) rotate(-45deg); }
+  50% { transform: scale(1.2) rotate(-45deg); }
+}
+
+
+#base{
+    width:1500px;
+    min-height:800px;
+    margin:auto;
+    background:linear-gradient(90deg,#ff6f00,#ffffff,#ff8f00);
+    border:2px solid black;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+nav{
+    background:#6ec6ff;
+    padding:18px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#6a1b9a;
+}
+
+.titulo{
+    text-align:center;
+    font-size:70px;
+    font-family:"Brush Script MT", cursive;
+    color:#ff1493;
+    text-shadow:3px 3px 5px white;
+}
+
+.eventos{
+    width:60%;
+    margin:auto;
+    padding:20px;
+}
+
+.evento{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.evento img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+
+.evento-texto h3{
+    color:#7b2cbf;
+    font-size:28px;
+    margin:0;
+}
+
+.evento-texto p{
+    font-size:18px;
+    color:#333;
+}
+
+.cotizar{
+    width:80%;
+    margin:50px auto;
+    padding:30px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.titulo-cotizar{
+    text-align:center;
+    font-size:50px;
+    font-family:"Brush Script MT", cursive;
+    color:#ff1493;
+}
+
+.formulario{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    padding:12px;
+    font-size:16px;
+    border:1px solid #ccc;
+}
+
+.formulario textarea{
+    height:100px;
+    resize:none;
+}
+
+.formulario button{
+    padding:15px;
+    background:#ff1493;
+    color:white;
+    font-size:18px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.formulario button:hover{
+    background:#7b2cbf;
+}
+
+.exito{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    z-index:999;
+}
+
+.check{
+    font-size:140px;
+    color:#00ff88;
+    animation:aparecer 0.6s ease-in-out, salto 1s infinite alternate;
+}
+
+.exito h2{
+    font-size:30px;
+    margin-top:20px;
+}
+
+@keyframes aparecer{
+    from{transform:scale(0);opacity:0;}
+    to{transform:scale(1);opacity:1;}
+}
+
+@keyframes salto{
+    from{transform:translateY(0);}
+    to{transform:translateY(-20px);}
+}
+
+.oculto{
+    display:none;
+}
+
+.pie{
+    width:100%;
+    background:linear-gradient(90deg,#ff69b4,#ffffff,#ff1493);
+    color:#6a1b9a;
+    text-align:center;
+    padding:20px;
+    font-size:20px;
+    margin-top:40px;
+    box-shadow:0 -5px 15px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../indexx.html">INICIO</a>
+    <a href="CONOCENOS.html">CONÓCENOS</a>
+    <a href="MENU.html">MENÚ</a>
+    <a href="PROMOCIONES.html">PROMOCIONES</a>
+    <a href="EVENTOS.html">EVENTOS</a>
+    <a href="CONTACTO.html">CONTACTO</a>
+</nav>
+
+<h1 class="titulo">🎉 Eventos Elotes Party 🎉</h1>
+
+<div class="eventos">
+    <div class="evento">
+        <img src="../IMAGENES/eventos cumple.png" alt="Cumpleaños">
+        <div class="evento-texto">
+            <h3>Fiestas de Cumpleaños</h3>
+            <p>Haz tu cumpleaños más especial con ELOTES PARTY 🌽🎂.</p>
+        </div>
+    </div>
+
+    <div class="evento">
+        <img src="../IMAGENES/eventos escolares.jpg" alt="Escolares">
+        <div class="evento-texto">
+            <h3>Eventos Escolares</h3>
+            <p>Llevamos el sabor a kermeses y festivales 🌽🎉.</p>
+        </div>
+    </div>
+
+    <div class="evento">
+        <img src="../IMAGENES/privado.jpeg" alt="Privados">
+        <div class="evento-texto">
+            <h3>Eventos Privados</h3>
+            <p>Bodas y reuniones con elotes recién hechos 🌽🎉.</p>
+        </div>
+    </div>
+</div>
+
+<section class="cotizar">
+    <h2 class="titulo-cotizar">Cotiza tu Evento</h2>
+
+    <form class="formulario" onsubmit="enviarCotizacion(event)">
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="tel" placeholder="WhatsApp" required>
+        <input type="email" placeholder="Correo electrónico">
+
+        <select required>
+            <option value="">Tipo de evento</option>
+            <option>Fiesta de cumpleaños</option>
+            <option>Evento escolar</option>
+            <option>Evento privado</option>
+            <option>Boda</option>
+        </select>
+
+        <input type="number" placeholder="Número de personas" required>
+        <textarea placeholder="Detalles del evento..."></textarea>
+
+        <button type="submit">Enviar Cotización</button>
+    </form>
+</section>
+
+<div id="mensajeExito" class="exito oculto">
+    <div class="check">✔</div>
+    <h2>¡Cotización enviada con éxito!</h2>
+</div>
+
+<footer class="pie">
+    <p>Elotes Party | 04 de junio de 2026</p>
+</footer>
+
+
+<div class="heart"></div>
+
+<script>
+function enviarCotizacion(event){
+    event.preventDefault();
+    const mensaje = document.getElementById("mensajeExito");
+    mensaje.classList.remove("oculto");
+
+    setTimeout(function(){
+        mensaje.classList.add("oculto");
+    },3000);
+}
+</script>
+
+</body>
+</html>

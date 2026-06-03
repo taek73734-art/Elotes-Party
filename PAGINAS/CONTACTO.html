@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto Creativo</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Fredoka', Arial, sans-serif;
+}
+
+#base{
+    width:1500px;
+    min-height:800px;
+    margin:auto;
+    background:linear-gradient(135deg,#2DD4BF,#14B8A6);
+    padding:20px;
+    box-sizing:border-box;
+}
+
+nav{
+    background:#6ec6ff;
+    padding:18px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#6a1b9a;
+}
+
+.contacto-creativo{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 0;
+}
+
+.contenido-contacto{
+    width:700px;
+    background:rgba(255,255,255,0.15);
+    padding:40px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contenido-contacto h2{
+    font-size:55px;
+    color:white;
+    margin-bottom:15px;
+    text-shadow:3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.contenido-contacto p{
+    color:white;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.formulario-contacto{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea{
+    padding:15px;
+    font-size:17px;
+    border:none;
+}
+
+.formulario-contacto textarea{
+    height:120px;
+    resize:none;
+}
+
+.formulario-contacto button{
+    background:#ffea00;
+    color:#ff4d00;
+    padding:15px;
+    font-size:20px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.formulario-contacto button:hover{
+    background:white;
+}
+
+
+.redes-sociales{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.redes-sociales a{
+    background:rgba(255,255,255,0.2);
+    color:white;
+    padding:12px 20px;
+    font-size:18px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.redes-sociales a:hover{
+    background:white;
+    color:#14B8A6;
+}
+
+.pie{
+    width:100%;
+    background:linear-gradient(90deg,#ff69b4,#ffffff,#ff1493);
+    color:#6a1b9a;
+    text-align:center;
+    padding:20px;
+    font-size:20px;
+    margin-top:40px;
+    box-shadow:0 -5px 15px rgba(0,0,0,0.2);
+}
+	video{
+    width: 300px;
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="base">
+   <nav>
+    <a href="../indexx.html">INICIO</a>
+    <a href="CONOCENOS.html">CONÓCENOS</a>
+    <a href="MENU.html">MENÚ</a>
+    <a href="PROMOCIONES.html">PROMOCIONES</a>
+    <a href="EVENTOS.html">EVENTOS</a>
+    <a href="CONTACTO.html">CONTACTO</a>
+</nav>
+
+    <section class="contacto-creativo">
+    <div class="contenido-contacto">
+
+            <h2>✨ Contáctanos ✨</h2>
+            <p>
+                ¡Disfruta de nuestros elotes! 🌽💖<br>
+                Escríbenos y síguenos en nuestras redes sociales.
+            </p>
+            <form class="formulario-contacto">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea placeholder="Escribe tu pedido"></textarea>
+                <button type="submit">Enviar Mensaje 🚀</button>
+
+            </form>
+            <div class="redes-sociales">
+
+                <a href="https://www.instagram.com/elote_partyoficial?igsh=MWswYXBrdmp6bmtwbQ%3D%3D&utm_source=qr" target="_blank">
+                    Instagram 📸
+                </a>
+                <a href="https://wa.me/526143677717" target="_blank">
+                    💬 WhatsApp
+                </a>
+
+    </div>
+    </div>
+    </section>
+
+    <footer class="pie">
+      <p>Elotes Party | 04 de junio de 2026</p>
+</footer>
+</div>
+</body>
+</html>
